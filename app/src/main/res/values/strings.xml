@@ -10,4 +10,6 @@
     <string name="go_to_activity_back">Go to Activity Back</string>
     <string name="go_to_relativelayout">Go to RelativeLayout</string>
     <string name="back_to_activity_home">Back to Activity Home</string>
+    <string name="constraintlayout">ConstraintLayout</string>
+    <string name="chi_ti_t_giao_d_ch">Chi tiết giao dịch</string>
 </resources>

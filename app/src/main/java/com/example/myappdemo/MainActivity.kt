@@ -5,13 +5,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.webkit.WebChromeClient
-import android.webkit.WebSettings
 import android.webkit.WebView
-import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.Toast
-import com.example.myappdemo.fragment.MainActivity
 import com.example.myappdemo.recyclerview.MainActivity4
 import com.example.myappdemo.thread.ThreadActivity
 
@@ -28,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val btn5 :Button = findViewById(R.id.btn5)
         val btn6 :Button = findViewById(R.id.btn6)
         val btn7 :Button = findViewById(R.id.btn7)
+        val btn8 :Button = findViewById(R.id.btn8)
         btn2.setOnClickListener {
             val i = Intent(this,MainActivity2::class.java)
             startActivity(i)
@@ -52,7 +49,10 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this,ThreadActivity::class.java)
             startActivity(i)
         }
-
+        btn8.setOnClickListener {
+            val i = Intent(this,TransactionDetailsActivity::class.java)
+            startActivity(i)
+        }
     }
 
     override fun onStart() {
